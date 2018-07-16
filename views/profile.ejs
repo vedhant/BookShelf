@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/assets/profile.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <% include partials/nav.ejs %>
+    <div id="user"><%= user %></div>
+    <div class="container" id='others_container'>
+      <form id="other_profile">
+        <div class="row">
+          <div class="col-md-5">
+            <h4 class="display-4">View others profiles </h4>
+          </div>
+          <div class="col-md-4">
+            <p id="user_not_found"></p>
+            <input type="find" autocomplete="off" class="form-control" name="find" placeholder="enter user's name...">
+          </div>
+          <div class="col-md-3">
+            <button type="submit" class='btn'>Find</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <hr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+            <a href="#fav" class="nav-link active" data-toggle="tab">favourites</a>
+            <a href="#shelf" class="nav-link" data-toggle="tab">shelf</a>
+            <a href="#want_to_read" class="nav-link" data-toggle="tab">want to read</a>
+            <a href="#currently_reading" class="nav-link" data-toggle="tab">currently reading</a>
+            <a href="#finished_reading" class="nav-link" data-toggle="tab">finished reading</a>
+          </nav>
+          <div class="tab-content py-5">
+            <div class="tab-pane active" id="fav">
+              <!-- <div class="container">
+                <img src="http://books.google.com/books/content?id=yV__AAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api">
+                <h3 class="card-title">Title of the book</h3>
+                <h5 class="card-subtitle text-muted">- name of author</h5>
+              </div> -->
+            </div>
+            <div class="tab-pane" id="shelf">
+
+            </div>
+            <div class="tab-pane" id="want_to_read">
+
+            </div>
+            <div class="tab-pane" id="currently_reading">
+
+            </div>
+            <div class="tab-pane" id="finished_reading">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" id="activity">
+          <!-- <h1 class="display-4" >Activity</h1> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="profile.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  </body>
+</html>

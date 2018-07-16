@@ -1,0 +1,132 @@
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('Poppins-Regular.ttf');
+}
+
+
+body{
+  background: #ebeeef;
+}
+
+.Container{
+  position: absolute;
+  /* border: 1px solid black; */
+  width: 45vw;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  border-radius: 10px;
+  background: white;
+  padding-bottom: 5vh;
+}
+
+.Container>div{
+  height: 25vh;
+  background-image: url('bg-01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.Container div span{
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  text-align: center;
+  background-color: rgba(54,84,99,0.7);
+  line-height: 25vh;
+  font-family: Poppins-Bold;
+  color: white;
+  font-size: 30px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+form span{
+  display: inline-block;
+  color: #555555;
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: right;
+  width: 25%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 20px;
+  /* border: 1px solid black; */
+}
+form input{
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: #808080;
+  background: transparent;
+  width: 55%;
+  border: none;
+  outline: none;
+  padding: 0 5px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #808080;
+}
+.g-recaptcha{
+  display: inline-block;
+  margin-left: 18px;
+  float: left;
+}
+
+form button{
+  font-family: Poppins-Regular;
+  color: white;
+  background-color: #57b846;
+  font-size: 18px;
+  width: 20%;
+  display: inline-block;
+  /* transform: translateX(17vw); */
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 400px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  float: right;
+  margin-right: 8vw;
+  margin-top: 1.5vh;
+}
+
+form button:hover{
+  background-color: rgb(50, 50, 50);
+}
+
+form input:hover{
+  border-bottom: 1px solid #57b846;
+}
+form input:focus{
+  border-bottom: 1px solid #57b846;
+  color: #555555;
+}
+
+#err{
+  width:100%;
+  text-align: center;
+  color: red;
+  padding-bottom: 0;
+}
+
+#usernames{
+  display: none;
+}
+
+.activity{
+  display: none;
+}
+
+.auth .logged_in{
+  display: none;
+}

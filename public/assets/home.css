@@ -1,0 +1,62 @@
+#search_container{
+  margin-top: 2vh;
+}
+
+#search_container form>div div{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+h1{
+  text-align: center;
+}
+
+.fa-thumbs-up, .fa-thumbs-down{
+  font-size: 27px;
+  cursor: pointer;
+}
+
+#card_bottom{
+  margin-top: 8px;
+}
+
+#card_bottom button{
+  margin-top: 4px;
+}
+
+#fav{
+  margin-top: 10px;
+}
+
+#search_container{
+  position: relative;
+  z-index: 1085;
+}
+
+.modal-content > .d-flex{
+  min-height: 15vh;
+  padding: 10px;
+}
+
+.modal-content > .d-flex img{
+  height: 10vh;
+  margin-left: auto;
+}
+
+#block{
+  margin-top: 10vh;
+}
+
+#block > div{
+  padding: 10px;
+}
+
+#user{
+  display: none;
+}
+.fa-star{
+  cursor: pointer;
+}
+.auth .logged_out{
+  display: none;
+}
